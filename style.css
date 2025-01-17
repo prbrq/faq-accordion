@@ -1,4 +1,5 @@
 *{
+    font-size: 16px;
     font-family: 'Work Sans';
     color: hsl(292, 42%, 14%);
     box-sizing: border-box;
@@ -10,14 +11,24 @@ html, body {
     padding: 0px;
 }
 
+h1 {
+    font-size: x-large;
+}
+
 .wrapper {
     display: flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
     background-image: url('/assets/images/background-pattern-mobile.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: hsl(276, 71%, 95%);
+}
+
+.indicator {
+    vertical-align:middle;   
+    float: right;
 }
 
 .substrate {
@@ -27,4 +38,24 @@ html, body {
     margin: 20px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
+    width: 80%;
+}
+
+.main {
+    width: 100%;
+}
+
+.answer {
+    display: none;
+    font-size: small;
+    color: hsl(292, 16%, 49%);
+}
+
+.question{
+    font-size: small;
+}
+
+.question:hover {
+    cursor: pointer;
+    color: hsl(281, 83%, 54%);
 }
