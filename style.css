@@ -1,18 +1,28 @@
-*{
+* {
     font-size: 16px;
     font-family: 'Work Sans';
     color: hsl(292, 42%, 14%);
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0px;
     padding: 0px;
 }
 
-h1 {
-    font-size: x-large;
+.title h1 {
+    font-size: xx-large;
+}
+
+.title img {
+    width: 10%;
+}
+
+hr {
+    border: 1px solid hsl(275, 100%, 97%);
+    border-radius: 5px;
 }
 
 .wrapper {
@@ -27,7 +37,7 @@ h1 {
 }
 
 .indicator {
-    vertical-align:middle;   
+    vertical-align: middle;
     float: right;
 }
 
@@ -35,21 +45,36 @@ h1 {
     padding: 20px;
     margin: 20px;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 25px;
-    width: 80%;
+    border-radius: 10px;
+    width: 90%;
 }
 
 .answer {
     display: none;
     font-size: small;
     color: hsl(292, 16%, 49%);
+    line-height: 1.5;
 }
 
-.question{
+.question {
+    display: flex;
+    justify-content: space-between;
     font-size: small;
 }
 
 .question:hover {
     cursor: pointer;
     color: hsl(281, 83%, 54%);
+}
+
+.title {
+    display: flex;
+}
+
+.title h1 {
+    padding-left: 10%;
+}
+
+.question h2 {
+    margin-right: 20px;
 }
